@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta · aniversário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at 10% 20%, #1a0b2e, #0b0b0f 90%);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .carta-container {
+            max-width: 750px;
+            width: 100%;
+            background: rgba(20, 10, 30, 0.8);
+            backdrop-filter: blur(6px);
+            border: 2px solid #7e22ce;
+            border-radius: 2rem 2rem 2rem 2rem;
+            box-shadow: 0 30px 45px -15px #000,
+                        0 0 0 1px #a855f7 inset,
+                        0 0 30px #9333ea;
+            padding: 0.8rem;
+        }
+
+        .carta {
+            background: #faf5ff;
+            color: #1e0b36;
+            border-radius: 1.8rem;
+            padding: 2.5rem 2.2rem;
+            box-shadow: inset 0 0 0 2px #d8b4fe, 0 10px 20px rgba(0, 0, 0, 0.6);
+            border: 1px solid #c084fc;
+        }
+
+        .carta h1 {
+            font-size: 2.8rem;
+            font-weight: 400;
+            font-family: 'Brush Script MT', 'Dancing Script', cursive;
+            color: #4c1d95;
+            text-align: center;
+            margin-bottom: 0.3rem;
+            text-shadow: 2px 2px 0 #e9d5ff;
+            letter-spacing: 1px;
+            word-break: break-word;
+        }
+
+        .carta .sub {
+            text-align: center;
+            font-size: 1.1rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #6b21a5;
+            border-bottom: 2px dashed #a78bfa;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .mensagem {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #2d1b46;
+            text-align: left;
+            white-space: pre-line;
+            font-family: 'Palatino', 'Georgia', serif;
+        }
+
+        .mensagem p {
+            margin-bottom: 1.4rem;
+            text-indent: 2em;
+        }
+
+        .mensagem p:last-child {
+            margin-bottom: 0;
+        }
+
+        .assinatura {
+            margin-top: 2.5rem;
+            text-align: right;
+            font-size: 1.8rem;
+            font-family: 'Brush Script MT', cursive;
+            color: #5b21b6;
+            border-top: 2px dotted #c084fc;
+            padding-top: 1rem;
+            padding-right: 1rem;
+        }
+
+        .assinatura span {
+            font-size: 1rem;
+            font-family: 'Segoe UI', sans-serif;
+            color: #6d28d9;
+            display: block;
+        }
+
+        .decoracao {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 1.5rem 0 0.5rem;
+            color: #c2410c;
+            font-size: 1.7rem;
+        }
+
+        .decoracao i {
+            color: #a21caf;
+            filter: drop-shadow(0 0 5px #f0abfc);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #7b4c9e;
+        }
+
+        /* estilo para a dedicatória especial */
+        .dedicatoria {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 1.2rem;
+            color: #4c1d95;
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+        .dedicatoria .nome-destaque {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #6d28d9;
+            display: block;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="carta-container">
+        <div class="carta">
+            <h1>Para um dia especial</h1>
+            <div class="sub">20 de abril</div>
+
+            <div class="mensagem">
+                <p>
+                    Não sei bem por onde começar, porque palavras parecem pequenas diante de um dia como hoje. 
+                    Mas aqui estou, tentando reunir pedaços de afeto e gratidão para entregar a você.
+                </p>
+                <p>
+                    Lembro de cada risada, cada conversa que se estendeu pela madrugada, cada silêncio que também dizia tudo. 
+                    Você tem o dom de transformar o comum em algo brilhante — como se o mundo ganhasse um filtro mais bonito quando você está por perto.
+                </p>
+                <p>
+                    Que esse novo ano de vida seja generoso com você, que os sonhos se aproximem, que os abraços sejam muitos 
+                    e que a felicidade seja tão natural quanto o seu sorriso. Não importa a distância ou o tempo: o que construímos 
+                    fica guardado aqui, num lugar que só a gente conhece.
+                </p>
+                <p>
+                    Hoje é seu dia, mas quem ganha o presente sou eu, por ter você no mundo. Celebre, brilhe, coma um pedaço de bolo 
+                    por mim e, principalmente, sinta-se amada. Porque você é.
+                </p>
+                <p>
+                    Com todo carinho,
+                </p>
+            </div>
+
+            <!-- Assinatura personalizada -->
+            <div class="assinatura" style="text-align: left; border-top: none; padding-top: 0;">
+                <div class="dedicatoria">
+                    <span class="nome-destaque">Marcuu</span>
+                    <div style="font-size: 1.1rem; color: #5b21b6; margin-top: 0.2rem;">
+                        para: <span style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color:#a130d6;">Klycia</span> fuma crack
+                    </div>
+                </div>
+            </div>
+
+            <!-- pequena assinatura visual (opcional) -->
+            <div class="assinatura" style="margin-top: 1rem;">
+                💜
+                <span>∞</span>
+            </div>
+        </div>
+
+        <footer>
+            ✦ sinta-se abraçada ✦
+        </footer>
+    </div>
+</body>
+</html>
